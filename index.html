@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Biblioteka</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="sectionsContainer">
+				<section class="booklistSection">
+					<h1 class="booklistSection__header">Lista książek</h1>
+					<table class="booklistContainer">
+						<tbody class="booklist">
+							<tr class="booklist__row">
+								<th class="booklist__data booklist__data--header">Tytuł</th>
+								<th class="booklist__data booklist__data--header">Autor</th>
+								<th class="booklist__data booklist__data--header">Priorytet</th>
+								<th class="booklist__data booklist__data--header">Kategoria</th>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<section class="bookFormSection">
+					<h1 class="bookFormSection__header">Formularz</h1>
+					<form class="form">
+						<div class="form__inputContainer">
+							<label class="form__inputContainer__label" for="title"
+								>Tytuł:</label
+							>
+							<input
+								class="form__inputContainer__input"
+								type="text"
+								id="title"
+								name="title"
+								placeholder="Tytuł książki..."
+							/>
+							<p class="form__inputContainer__error"></p>
+						</div>
+						<div class="form__inputContainer">
+							<label class="form__inputContainer__label" for="title"
+								>Autor:</label
+							>
+							<input
+								class="form__inputContainer__input"
+								type="text"
+								id="author"
+								name="author"
+								placeholder="Autor książki..."
+							/>
+							<p class="form__inputContainer__error"></p>
+						</div>
+						<div class="form__inputContainer">
+							<label class="form__inputContainer__label" for="priority"
+								>Priorytet:</label
+							>
+							<input
+								class="form__inputContainer__input"
+								type="number"
+								id="priority"
+								name="priority"
+								placeholder="Liczba 1-5"
+								max="5"
+								min="1"
+							/>
+							<p class="form__inputContainer__error"></p>
+						</div>
+						<div class="form__inputContainer">
+							<label class="form__inputContainer__label" for="category"
+								>Kategoria:</label
+							>
+							<select
+								class="
+									form__inputContainer__input
+									form__inputContainer__input--select
+								"
+								name="category"
+								id="category"
+							>
+								<option value="comedy">Komedia</option>
+								<option value="crime">Kryminał</option>
+								<option value="drama">Dramat</option>
+							</select>
+						</div>
+						<button class="form__button">Dodaj książkę</button>
+						<p class="form__inputContainer__mainError"></p>
+					</form>
+				</section>
+			</div>
+		</div>
+		<script type="module" src="app.js"></script>
+	</body>
+</html>
